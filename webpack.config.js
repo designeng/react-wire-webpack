@@ -1,5 +1,5 @@
+var webpack = require('webpack');
 var LiveReloadPlugin = require('webpack-livereload-plugin');
-// var UmdRequirePlugin = require('umd-require-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -19,7 +19,9 @@ module.exports = {
         ]
     },
     plugins: [
-        // new UmdRequirePlugin()
+        new webpack.ContextReplacementPlugin(
+                /app ^\.\/.*$/, 
+                /.js$/)
         // new LiveReloadPlugin({port: 8081}),
     ],
     devtool: 'source-map'

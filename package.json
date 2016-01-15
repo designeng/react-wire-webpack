@@ -24,6 +24,6 @@
   "dependencies": {
     "express": "^4.13.3",
     "when": "^3.7.7",
-    "wire": "^0.10.11"
+    "wire": "git://github.com/designeng/wire#require.context"
   }
 }

@@ -1,2 +1,2 @@
-const test = {require: require};
-// const test = {};
+import wire from 'wire'
+
