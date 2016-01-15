@@ -19,10 +19,10 @@ module.exports = {
         ]
     },
     plugins: [
-        new webpack.ContextReplacementPlugin(
-                /app ^\.\/.*$/, 
-                /.js$/)
-        // new LiveReloadPlugin({port: 8081}),
+        // new webpack.ContextReplacementPlugin(
+        //         /app ^\.\/.*$/, 
+        //         /.js$/)
+        new LiveReloadPlugin({port: 8081}),
     ],
     devtool: 'source-map'
 }
