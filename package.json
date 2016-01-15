@@ -23,6 +23,8 @@
   },
   "dependencies": {
     "express": "^4.13.3",
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6",
     "when": "^3.7.7",
     "wire": "git://github.com/designeng/wire#require.context"
   }
